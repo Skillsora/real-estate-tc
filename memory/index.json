@@ -1,0 +1,17 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-05-08",
+  "tier": "demo",
+  "entries": [
+    { "state": "CA", "stateName": "California", "transactionType": "residential", "itemCount": 20, "file": "state-checklists/ca.json" },
+    { "state": "TX", "stateName": "Texas", "transactionType": "residential", "itemCount": 20, "file": "state-checklists/tx.json" },
+    { "state": "FL", "stateName": "Florida", "transactionType": "residential", "itemCount": 20, "file": "state-checklists/fl.json" },
+    { "state": "NY", "stateName": "New York", "transactionType": "residential", "itemCount": 20, "file": "state-checklists/ny.json" },
+    { "state": "IL", "stateName": "Illinois", "transactionType": "residential", "itemCount": 20, "file": "state-checklists/il.json" },
+    { "state": "AZ", "stateName": "Arizona", "transactionType": "residential", "itemCount": 20, "file": "state-checklists/az.json" },
+    { "state": "GA", "stateName": "Georgia", "transactionType": "residential", "itemCount": 20, "file": "state-checklists/ga.json" },
+    { "state": "NC", "stateName": "North Carolina", "transactionType": "residential", "itemCount": 20, "file": "state-checklists/nc.json" },
+    { "state": "OH", "stateName": "Ohio", "transactionType": "residential", "itemCount": 20, "file": "state-checklists/oh.json" },
+    { "state": "PA", "stateName": "Pennsylvania", "transactionType": "residential", "itemCount": 20, "file": "state-checklists/pa.json" }
+  ]
+}

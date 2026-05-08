@@ -1,0 +1,159 @@
+{
+  "state": "NC",
+  "stateName": "North Carolina",
+  "transactionType": "residential",
+  "version": "0.1.0",
+  "source": "North Carolina Real Estate Commission (NCREC), NC Form 2-T standard, public guidance",
+  "lastUpdated": "2026-05-08",
+  "items": [
+    {
+      "id": "task-001",
+      "title": "Open transaction file and confirm Form 2-T contract version",
+      "phase": "intake",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 0, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-002",
+      "title": "Collect fully executed Offer to Purchase and Contract (Form 2-T)",
+      "phase": "intake",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 1, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-003",
+      "title": "Confirm Due Diligence Fee delivered to seller (non-refundable)",
+      "description": "North Carolina has a unique structure. The Due Diligence Fee is paid upfront and non-refundable. Earnest money is separate and refundable until DD ends.",
+      "phase": "under_contract",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-004",
+      "title": "Earnest money delivered to escrow",
+      "phase": "under_contract",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-005",
+      "title": "Track Due Diligence Period (typically 14 to 30 days)",
+      "phase": "under_contract",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 1, "anchor": "contract_signed" },
+      "stateSpecific": true,
+      "notes": "Buyer can terminate for any reason during DD. Critical date to track."
+    },
+    {
+      "id": "task-006",
+      "title": "Deliver Residential Property and Owners Association Disclosure Statement",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-007",
+      "title": "Lead-based paint disclosure for pre-1978 homes",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-008",
+      "title": "Schedule home inspection during DD",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-009",
+      "title": "Schedule septic and well inspection if applicable",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-010",
+      "title": "Submit repair request before DD expiration",
+      "phase": "inspection",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 14, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-011",
+      "title": "Lender orders appraisal",
+      "phase": "appraisal",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-012",
+      "title": "Title search ordered by attorney",
+      "phase": "under_contract",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-013",
+      "title": "Loan approval received",
+      "phase": "closing_prep",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": -10, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-014",
+      "title": "Closing Disclosure delivered 3 business days before closing",
+      "phase": "closing_prep",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": -3, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-015",
+      "title": "Final walkthrough completed",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-016",
+      "title": "Verify wire instructions by phone before sending funds",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-017",
+      "title": "Closing executed at attorney's office (NC is attorney-state)",
+      "phase": "closing_day",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": 0, "anchor": "closing_date" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-018",
+      "title": "Recording sent to county Register of Deeds",
+      "phase": "closing_day",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": 0, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-019",
+      "title": "Commission disbursement to brokerage",
+      "phase": "post_close",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": 1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-020",
+      "title": "File archive and NCREC compliance review",
+      "phase": "post_close",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 5, "anchor": "closing_date" }
+    }
+  ]
+}

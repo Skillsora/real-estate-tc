@@ -1,0 +1,23 @@
+node_modules/
+dist/
+build/
+*.log
+.env
+.env.local
+.env.*.local
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+coverage/
+*.tsbuildinfo
+
+# Local runtime data (SQLite databases, etc.)
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# Memory pack premium content (proprietary, shipped via Skillsora purchase delivery)
+memory/premium/
+memory/state-checklists/full/

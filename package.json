@@ -1,0 +1,29 @@
+{
+  "name": "@skillsora/real-estate-tc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Vertical AI bundle for Real Estate Transaction Coordinators (US). MCP servers, skills and memory pack.",
+  "license": "MIT",
+  "homepage": "https://skillsora.digital/real-estate-tc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Skillsora/real-estate-tc.git"
+  },
+  "author": "Skillsora <contact@skillsora.digital>",
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "mcp-servers/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}

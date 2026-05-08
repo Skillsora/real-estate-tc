@@ -1,0 +1,158 @@
+{
+  "state": "CA",
+  "stateName": "California",
+  "transactionType": "residential",
+  "version": "0.1.0",
+  "source": "California Bureau of Real Estate, CAR standard forms, public commission guidance",
+  "lastUpdated": "2026-05-08",
+  "items": [
+    {
+      "id": "task-001",
+      "title": "Open transaction file and assign TC code",
+      "phase": "intake",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 0, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-002",
+      "title": "Collect fully executed Residential Purchase Agreement (RPA-CA)",
+      "phase": "intake",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 1, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-003",
+      "title": "Verify all party contact info and lender pre-approval letter",
+      "phase": "intake",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 1, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-004",
+      "title": "Open escrow with selected company and confirm escrow officer",
+      "phase": "under_contract",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 2, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-005",
+      "title": "Confirm earnest money deposit received in escrow",
+      "phase": "under_contract",
+      "responsibleParty": "escrow",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-006",
+      "title": "Deliver Transfer Disclosure Statement (TDS) to buyer",
+      "description": "California requires the seller to provide the TDS within statutory deadlines.",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-007",
+      "title": "Deliver Natural Hazard Disclosure (NHD) report",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-008",
+      "title": "Deliver Megan's Law disclosure",
+      "phase": "under_contract",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-009",
+      "title": "Deliver Agent Visual Inspection Disclosure (AVID)",
+      "phase": "under_contract",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-010",
+      "title": "Schedule and complete general home inspection",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-011",
+      "title": "Submit repair request and negotiate Request for Repairs addendum",
+      "phase": "inspection",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 14, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-012",
+      "title": "Lender orders appraisal",
+      "phase": "appraisal",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-013",
+      "title": "Confirm water heater anchoring and smoke/CO detector compliance",
+      "phase": "closing_prep",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": -10, "anchor": "closing_date" },
+      "stateSpecific": true,
+      "notes": "California requires water heater bracing and updated smoke/CO detectors at sale."
+    },
+    {
+      "id": "task-014",
+      "title": "Collect Seller's Affidavit of Non-Foreign Status (FIRPTA) or arrange withholding",
+      "phase": "closing_prep",
+      "responsibleParty": "escrow",
+      "dueOffset": { "days": -7, "anchor": "closing_date" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-015",
+      "title": "Buyer final walkthrough completed",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -2, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-016",
+      "title": "Confirm Closing Disclosure (CD) delivered to buyer at least 3 business days prior",
+      "phase": "closing_prep",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": -3, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-017",
+      "title": "Verify wire instructions by phone (anti-fraud) before sending funds",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-018",
+      "title": "Recording confirmed and keys released to buyer",
+      "phase": "closing_day",
+      "responsibleParty": "escrow",
+      "dueOffset": { "days": 0, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-019",
+      "title": "Commission disbursement to brokerage confirmed",
+      "phase": "post_close",
+      "responsibleParty": "escrow",
+      "dueOffset": { "days": 1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-020",
+      "title": "File archive complete: P&S, addendums, disclosures, CD, recording confirmation",
+      "phase": "post_close",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 5, "anchor": "closing_date" }
+    }
+  ]
+}

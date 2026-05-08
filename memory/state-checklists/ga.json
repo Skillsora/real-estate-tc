@@ -1,0 +1,156 @@
+{
+  "state": "GA",
+  "stateName": "Georgia",
+  "transactionType": "residential",
+  "version": "0.1.0",
+  "source": "Georgia Real Estate Commission (GREC), GAR forms, public guidance",
+  "lastUpdated": "2026-05-08",
+  "items": [
+    {
+      "id": "task-001",
+      "title": "Open transaction file and assign TC code",
+      "phase": "intake",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 0, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-002",
+      "title": "Collect fully executed GAR Purchase and Sale Agreement",
+      "phase": "intake",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 1, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-003",
+      "title": "Confirm Brokerage Engagement Agreement signed by both parties",
+      "phase": "intake",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 1, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-004",
+      "title": "Earnest money delivered to listing brokerage escrow",
+      "phase": "under_contract",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-005",
+      "title": "Track Due Diligence Period start (typically 7 to 14 days)",
+      "phase": "under_contract",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 1, "anchor": "contract_signed" },
+      "stateSpecific": true,
+      "notes": "Georgia uses Due Diligence Period for inspection contingency. Buyer can terminate for any reason during this window."
+    },
+    {
+      "id": "task-006",
+      "title": "Deliver Seller's Property Disclosure Statement",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-007",
+      "title": "Lead-based paint disclosure for pre-1978 homes",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-008",
+      "title": "Schedule home inspection within Due Diligence Period",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 5, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-009",
+      "title": "Order termite letter (WDO Letter)",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-010",
+      "title": "Submit Amendment to Address Concerns or terminate before DD ends",
+      "phase": "inspection",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-011",
+      "title": "Title search ordered",
+      "phase": "under_contract",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-012",
+      "title": "Lender orders appraisal",
+      "phase": "appraisal",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-013",
+      "title": "Confirm HOA documents and transfer fees if applicable",
+      "phase": "closing_prep",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": -10, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-014",
+      "title": "Loan clear-to-close received",
+      "phase": "closing_prep",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": -5, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-015",
+      "title": "Final walkthrough completed",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-016",
+      "title": "Closing scheduled at attorney's office (Georgia is attorney-state)",
+      "phase": "closing_prep",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": -3, "anchor": "closing_date" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-017",
+      "title": "Closing executed and deed signed",
+      "phase": "closing_day",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": 0, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-018",
+      "title": "Recording sent to county clerk",
+      "phase": "closing_day",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": 0, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-019",
+      "title": "Commission disbursement to brokerage",
+      "phase": "post_close",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": 1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-020",
+      "title": "File archive and GREC compliance review",
+      "phase": "post_close",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 5, "anchor": "closing_date" }
+    }
+  ]
+}

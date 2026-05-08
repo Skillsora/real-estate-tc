@@ -1,0 +1,39 @@
+{
+  "name": "@skillsora/deadline-chaser",
+  "version": "0.1.0",
+  "description": "MCP server: contingency deadline tracker and follow-up template generator for US Real Estate Transaction Coordinators.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "skillsora-deadline-chaser": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/index.js",
+    "dev": "tsc --watch",
+    "clean": "shx rm -rf dist data",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "shx": "^0.3.4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "author": "Skillsora <contact@skillsora.digital>",
+  "homepage": "https://skillsora.digital/real-estate-tc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Skillsora/real-estate-tc.git",
+    "directory": "mcp-servers/deadline-chaser"
+  },
+  "keywords": ["mcp", "real-estate", "deadline", "contingency", "skillsora"]
+}

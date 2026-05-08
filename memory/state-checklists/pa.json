@@ -1,0 +1,156 @@
+{
+  "state": "PA",
+  "stateName": "Pennsylvania",
+  "transactionType": "residential",
+  "version": "0.1.0",
+  "source": "Pennsylvania State Real Estate Commission, PAR Standard Agreement, public guidance",
+  "lastUpdated": "2026-05-08",
+  "items": [
+    {
+      "id": "task-001",
+      "title": "Open transaction file and assign TC code",
+      "phase": "intake",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 0, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-002",
+      "title": "Collect fully executed PAR Standard Agreement for the Sale of Real Estate",
+      "phase": "intake",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 1, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-003",
+      "title": "Earnest money to listing brokerage escrow",
+      "phase": "under_contract",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-004",
+      "title": "Deliver Seller Property Disclosure Statement (mandatory)",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-005",
+      "title": "Deliver Coal Notice if property is in coal-mining county",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" },
+      "stateSpecific": true,
+      "notes": "Pennsylvania requires Coal Notice in counties affected by coal-mining (Bituminous Mine Subsidence Act)."
+    },
+    {
+      "id": "task-006",
+      "title": "Lead-based paint disclosure for pre-1978 homes",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-007",
+      "title": "Schedule home inspection within Inspection Contingency",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-008",
+      "title": "Schedule radon test (PA has elevated radon levels)",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 8, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-009",
+      "title": "Schedule wood-destroying insect (WDI) inspection",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 8, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-010",
+      "title": "Submit Reply to Inspection Notice and negotiate addendum",
+      "phase": "inspection",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 12, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-011",
+      "title": "Title search ordered",
+      "phase": "under_contract",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-012",
+      "title": "Lender orders appraisal",
+      "phase": "appraisal",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-013",
+      "title": "Loan commitment received",
+      "phase": "closing_prep",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": -14, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-014",
+      "title": "Calculate Realty Transfer Tax (state plus local, typically 2 percent split)",
+      "phase": "closing_prep",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": -7, "anchor": "closing_date" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-015",
+      "title": "Closing Disclosure delivered 3 business days prior",
+      "phase": "closing_prep",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": -3, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-016",
+      "title": "Final walkthrough completed",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-017",
+      "title": "Verify wire instructions by phone before sending funds",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-018",
+      "title": "Closing executed at title company",
+      "phase": "closing_day",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": 0, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-019",
+      "title": "Recording sent to county Recorder of Deeds",
+      "phase": "closing_day",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": 0, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-020",
+      "title": "Commission disbursement and PA Realty Transfer Tax filing confirmation",
+      "phase": "post_close",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": 1, "anchor": "closing_date" },
+      "stateSpecific": true
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "state": "AZ",
+  "stateName": "Arizona",
+  "transactionType": "residential",
+  "version": "0.1.0",
+  "source": "Arizona Department of Real Estate (ADRE), AAR forms, public guidance",
+  "lastUpdated": "2026-05-08",
+  "items": [
+    {
+      "id": "task-001",
+      "title": "Open transaction file and assign TC code",
+      "phase": "intake",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 0, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-002",
+      "title": "Collect fully executed AAR Residential Resale Real Estate Purchase Contract",
+      "phase": "intake",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 1, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-003",
+      "title": "Earnest money to escrow within contract deadline",
+      "phase": "under_contract",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-004",
+      "title": "Open escrow with title company",
+      "phase": "under_contract",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 2, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-005",
+      "title": "Deliver Seller Property Disclosure Statement (SPDS)",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 5, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-006",
+      "title": "Deliver CLUE report (insurance claims history)",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 5, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-007",
+      "title": "Deliver HOA disclosure and CC&R documents if applicable",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 5, "anchor": "contract_signed" },
+      "stateSpecific": true,
+      "notes": "Most Arizona communities are HOA-managed. Disclosure deadlines vary by HOA."
+    },
+    {
+      "id": "task-008",
+      "title": "Schedule general home inspection within Inspection Period",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-009",
+      "title": "Schedule termite (WDIIR) inspection",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 8, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-010",
+      "title": "Schedule pool inspection if applicable",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 8, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-011",
+      "title": "Submit Buyer's Inspection Notice and Seller's Response (BINSR)",
+      "phase": "inspection",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-012",
+      "title": "Lender orders appraisal",
+      "phase": "appraisal",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-013",
+      "title": "Loan approval received",
+      "phase": "closing_prep",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": -10, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-014",
+      "title": "HOA transfer fees and reserve disclosures collected",
+      "phase": "closing_prep",
+      "responsibleParty": "escrow",
+      "dueOffset": { "days": -7, "anchor": "closing_date" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-015",
+      "title": "Final walkthrough completed",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-016",
+      "title": "Verify wire instructions by phone before sending funds",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-017",
+      "title": "Closing signing at escrow company",
+      "phase": "closing_day",
+      "responsibleParty": "escrow",
+      "dueOffset": { "days": 0, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-018",
+      "title": "Recording confirmed at county recorder",
+      "phase": "closing_day",
+      "responsibleParty": "escrow",
+      "dueOffset": { "days": 0, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-019",
+      "title": "Commission disbursement to brokerage",
+      "phase": "post_close",
+      "responsibleParty": "escrow",
+      "dueOffset": { "days": 1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-020",
+      "title": "File archive and ADRE compliance review",
+      "phase": "post_close",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 5, "anchor": "closing_date" }
+    }
+  ]
+}

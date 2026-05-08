@@ -1,0 +1,160 @@
+{
+  "state": "FL",
+  "stateName": "Florida",
+  "transactionType": "residential",
+  "version": "0.1.0",
+  "source": "Florida Real Estate Commission (FREC), FAR/BAR contract standard, public guidance",
+  "lastUpdated": "2026-05-08",
+  "items": [
+    {
+      "id": "task-001",
+      "title": "Open transaction file and confirm FAR/BAR contract version",
+      "phase": "intake",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 0, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-002",
+      "title": "Collect fully executed FAR/BAR Residential Contract",
+      "phase": "intake",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 1, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-003",
+      "title": "Earnest money to escrow agent within contract deadline",
+      "phase": "under_contract",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-004",
+      "title": "Open title and order municipal lien search",
+      "phase": "under_contract",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": 5, "anchor": "contract_signed" },
+      "stateSpecific": true,
+      "notes": "Florida municipal lien search is critical to avoid post-close surprises (code violations, unpaid utilities)."
+    },
+    {
+      "id": "task-005",
+      "title": "Deliver HOA disclosure summary if applicable",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-006",
+      "title": "Deliver lead-based paint disclosure for pre-1978 homes",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-007",
+      "title": "Sinkhole disclosure delivered if seller has prior knowledge",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-008",
+      "title": "Schedule general home inspection",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-009",
+      "title": "Schedule WDO (termite) inspection",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-010",
+      "title": "Wind mitigation inspection ordered for insurance discount",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" },
+      "stateSpecific": true,
+      "notes": "Wind mitigation inspection can save buyer 30 to 60 percent on homeowner insurance in Florida."
+    },
+    {
+      "id": "task-011",
+      "title": "Inspection objection or repair request submitted",
+      "phase": "inspection",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 14, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-012",
+      "title": "Lender orders appraisal",
+      "phase": "appraisal",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-013",
+      "title": "Buyer obtains hurricane and flood insurance binder if required",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -14, "anchor": "closing_date" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-014",
+      "title": "HOA estoppel certificate ordered and reviewed",
+      "phase": "closing_prep",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": -10, "anchor": "closing_date" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-015",
+      "title": "Property tax proration calculated (Florida specific timing)",
+      "phase": "closing_prep",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": -5, "anchor": "closing_date" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-016",
+      "title": "Final walkthrough completed",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-017",
+      "title": "Closing signing at title company",
+      "phase": "closing_day",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": 0, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-018",
+      "title": "Recording confirmed at county clerk",
+      "phase": "closing_day",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": 0, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-019",
+      "title": "Commission disbursement to brokerage",
+      "phase": "post_close",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": 1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-020",
+      "title": "File archive complete and FREC compliance review",
+      "phase": "post_close",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 5, "anchor": "closing_date" }
+    }
+  ]
+}

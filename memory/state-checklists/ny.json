@@ -1,0 +1,162 @@
+{
+  "state": "NY",
+  "stateName": "New York",
+  "transactionType": "residential",
+  "version": "0.1.0",
+  "source": "NY Department of State Division of Licensing Services, NYSAR forms, public guidance",
+  "lastUpdated": "2026-05-08",
+  "items": [
+    {
+      "id": "task-001",
+      "title": "Open transaction file and confirm both attorneys retained",
+      "phase": "intake",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 0, "anchor": "contract_signed" },
+      "stateSpecific": true,
+      "notes": "New York transactions are attorney-driven. Both buyer and seller typically retain counsel."
+    },
+    {
+      "id": "task-002",
+      "title": "Confirm signed binder or contract delivered to both attorneys",
+      "phase": "intake",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 1, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-003",
+      "title": "Earnest money delivered to seller's attorney escrow account",
+      "phase": "under_contract",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 5, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-004",
+      "title": "Property Condition Disclosure Act form delivered or 500 USD credit applied",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" },
+      "stateSpecific": true,
+      "notes": "Most NY sellers waive PCDA and credit buyer 500 USD at closing instead."
+    },
+    {
+      "id": "task-005",
+      "title": "Lead-based paint disclosure delivered for pre-1978 homes",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-006",
+      "title": "Co-op or condo board package submitted if applicable",
+      "phase": "under_contract",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 14, "anchor": "contract_signed" },
+      "stateSpecific": true,
+      "notes": "Co-op approval can take 4 to 8 weeks. Critical path item for NYC transactions."
+    },
+    {
+      "id": "task-007",
+      "title": "Title search ordered by buyer's attorney",
+      "phase": "under_contract",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-008",
+      "title": "Engineer or home inspection scheduled",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-009",
+      "title": "Inspection objection rider negotiated by attorneys",
+      "phase": "inspection",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": 14, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-010",
+      "title": "Lender orders appraisal",
+      "phase": "appraisal",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": 14, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-011",
+      "title": "Mortgage commitment letter received and reviewed",
+      "phase": "appraisal",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": 30, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-012",
+      "title": "Calculate NY State and NYC transfer taxes",
+      "phase": "closing_prep",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": -10, "anchor": "closing_date" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-013",
+      "title": "Mansion tax computed if sale price 1M USD or higher",
+      "phase": "closing_prep",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": -10, "anchor": "closing_date" },
+      "stateSpecific": true,
+      "notes": "Mansion tax is buyer-paid, escalates from 1 percent at 1M USD to 3.9 percent over 25M USD in NYC."
+    },
+    {
+      "id": "task-014",
+      "title": "Final walkthrough scheduled",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-015",
+      "title": "Closing scheduled at buyer's attorney office or title company",
+      "phase": "closing_prep",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": -3, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-016",
+      "title": "Closing executed and deed signed",
+      "phase": "closing_day",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": 0, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-017",
+      "title": "Recording sent to ACRIS (NYC) or county clerk",
+      "phase": "closing_day",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": 0, "anchor": "closing_date" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-018",
+      "title": "Commission disbursement",
+      "phase": "post_close",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": 1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-019",
+      "title": "RP-5217 form filed if applicable",
+      "phase": "post_close",
+      "responsibleParty": "attorney",
+      "dueOffset": { "days": 3, "anchor": "closing_date" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-020",
+      "title": "File archive and DOS compliance review",
+      "phase": "post_close",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 5, "anchor": "closing_date" }
+    }
+  ]
+}

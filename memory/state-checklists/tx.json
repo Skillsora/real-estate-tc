@@ -1,0 +1,159 @@
+{
+  "state": "TX",
+  "stateName": "Texas",
+  "transactionType": "residential",
+  "version": "0.1.0",
+  "source": "Texas Real Estate Commission (TREC), TAR forms, public commission guidance",
+  "lastUpdated": "2026-05-08",
+  "items": [
+    {
+      "id": "task-001",
+      "title": "Open transaction file and assign TC code",
+      "phase": "intake",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 0, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-002",
+      "title": "Collect fully executed One to Four Family Residential Contract (TREC 20-17)",
+      "phase": "intake",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 1, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-003",
+      "title": "Confirm Option Fee delivered to seller and Option Period start date",
+      "description": "Texas Option Period is typically 7 to 10 days starting day after effective date. Critical to track.",
+      "phase": "under_contract",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-004",
+      "title": "Earnest money delivered to title company",
+      "phase": "under_contract",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 3, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-005",
+      "title": "Title company opens file and orders title commitment",
+      "phase": "under_contract",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": 5, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-006",
+      "title": "Deliver Seller's Disclosure Notice to buyer",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-007",
+      "title": "Order or update T-47 Residential Real Property Affidavit if seller has existing survey",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-008",
+      "title": "Confirm MUD, PID, or special district disclosure if applicable",
+      "phase": "under_contract",
+      "responsibleParty": "seller",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" },
+      "stateSpecific": true,
+      "notes": "Texas requires disclosure if property is in a Municipal Utility District or Public Improvement District."
+    },
+    {
+      "id": "task-009",
+      "title": "Schedule home inspection within Option Period",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 5, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-010",
+      "title": "Schedule foundation inspection if applicable (clay-soil regions)",
+      "phase": "inspection",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": 7, "anchor": "contract_signed" },
+      "stateSpecific": true
+    },
+    {
+      "id": "task-011",
+      "title": "Submit Amendment to Contract for repairs negotiation",
+      "phase": "inspection",
+      "responsibleParty": "agent",
+      "dueOffset": { "days": 9, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-012",
+      "title": "Lender orders appraisal",
+      "phase": "appraisal",
+      "responsibleParty": "lender",
+      "dueOffset": { "days": 10, "anchor": "contract_signed" }
+    },
+    {
+      "id": "task-013",
+      "title": "Buyer obtains homeowner insurance binder",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -10, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-014",
+      "title": "Title company prepares Settlement Statement and CD",
+      "phase": "closing_prep",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": -5, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-015",
+      "title": "Final walkthrough completed by buyer",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-016",
+      "title": "Verify wire instructions by phone before sending funds",
+      "phase": "closing_prep",
+      "responsibleParty": "buyer",
+      "dueOffset": { "days": -1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-017",
+      "title": "Closing executed at title company, deed signed and notarized",
+      "phase": "closing_day",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": 0, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-018",
+      "title": "Funding confirmed and recording sent to county",
+      "phase": "closing_day",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": 0, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-019",
+      "title": "Commission disbursement to brokerage confirmed",
+      "phase": "post_close",
+      "responsibleParty": "title_co",
+      "dueOffset": { "days": 1, "anchor": "closing_date" }
+    },
+    {
+      "id": "task-020",
+      "title": "File archive complete and TREC compliance review",
+      "phase": "post_close",
+      "responsibleParty": "tc",
+      "dueOffset": { "days": 5, "anchor": "closing_date" }
+    }
+  ]
+}
