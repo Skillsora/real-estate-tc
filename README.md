@@ -11,7 +11,7 @@ Stop chasing escrow docs, missing contingency deadlines, and rebuilding closing 
 [![MCP](https://img.shields.io/badge/protocol-MCP-coral.svg)](https://modelcontextprotocol.io)
 [![Skillsora](https://img.shields.io/badge/marketplace-Skillsora-1B1B5A.svg)](https://skillsora.digital)
 
-[Marketplace](https://skillsora.digital/real-estate-tc) · [Pre-order Pro $99](https://skillsora.gumroad.com/l/cixxp) · [50 state pages](https://skillsora.digital/real-estate-tc/california) · [Contact](mailto:contact@skillsora.digital)
+[Marketplace](https://skillsora.digital/real-estate-tc) · [Get Pro $99](https://skillsora.gumroad.com/l/cixxp) · [50 state pages](https://skillsora.digital/real-estate-tc/california) · [Contact](mailto:contact@skillsora.digital)
 
 </div>
 
@@ -260,13 +260,13 @@ The Pro tier and above ship the full **200 closing checklists across all 50 US s
 
 | Tier | Price | Best for | Buy |
 |---|---|---|---|
-| Lite | $49 one-time | Solo TC trying it out | [Pre-order](https://skillsora.gumroad.com/l/ikpfle) |
-| Pro | $99 one-time | Solo plus small brokerage (5 seats) | [Pre-order](https://skillsora.gumroad.com/l/cixxp) |
-| Team | $499 one-time | Brokerage 5 to 50 agents | [Pre-order](https://skillsora.gumroad.com/l/nywfq) |
-| Enterprise | $4,999 per year | Mid-size brokerages 50 to 500 agents | [Pre-order](https://skillsora.gumroad.com/l/ducqux) |
+| Lite | $49 one-time | Solo TC trying it out | [Buy](https://skillsora.gumroad.com/l/ikpfle) |
+| Pro | $99 one-time | Solo plus small brokerage (5 seats) | [Buy](https://skillsora.gumroad.com/l/cixxp) |
+| Team | $499 one-time | Brokerage 5 to 50 agents | [Buy](https://skillsora.gumroad.com/l/nywfq) |
+| Enterprise | $4,999 per year | Mid-size brokerages 50 to 500 agents | [Buy](https://skillsora.gumroad.com/l/ducqux) |
 | White-label | $24,999 one-time | Big brokerages and franchises | [Contact sales](mailto:contact@skillsora.digital?subject=White-label%20inquiry) |
 
-Pre-orders ship **2026-05-15**. The MIT-licensed code in this repository is already usable.
+Available now. The MIT-licensed code in this repository is already usable.
 
 ---
 
@@ -324,6 +324,6 @@ The premium memory pack (200 state checklists in `memory/premium/`) and white-la
 
 **Built by [Skillsora](https://skillsora.digital), the vertical agent stack marketplace.**
 
-If this saves you time, [pre-order Pro](https://skillsora.gumroad.com/l/cixxp) to support continued development and unlock the full 200-state memory pack.
+If this saves you time, [get Pro](https://skillsora.gumroad.com/l/cixxp) to support continued development and unlock the full 200-state memory pack.
 
 </div>
